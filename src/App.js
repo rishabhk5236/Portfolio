@@ -2,7 +2,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import Homepage from './Components/Homepage';
 import Navbar from './Components/Navbar';
-import { useDebugValue, useEffect } from 'react';
+import { useEffect } from 'react';
 
 function App() {
 

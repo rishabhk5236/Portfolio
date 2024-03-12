@@ -38,7 +38,7 @@ export default function Information() {
 </div>
     `
    
-    if(sendingData.email=="" || sendingData.feedback==""){
+    if(sendingData.email==="" || sendingData.feedback===""){
       setGotError(true);
       return;
     }
