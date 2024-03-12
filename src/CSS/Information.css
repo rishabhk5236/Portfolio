@@ -61,8 +61,8 @@
 
 .workContainer{
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
-  width: 90vw;
   padding-bottom: 2vw;
   border-bottom: 0.1vw solid black;
   margin-bottom: 2vw;
@@ -84,7 +84,6 @@
 }
 
 .projectsContainer .card{
-  width: 90vw;
   box-shadow: 0px 0.01vw 0.3vw rgb(104, 104, 104);
 }
 
