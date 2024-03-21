@@ -1,5 +1,4 @@
 import React from "react";
-import gmailLogo from "../Resources/Navbar/gmailLogo.png";
 import xLogo from "../Resources/Navbar/x twitterLogo.png";
 import githubLogo from "../Resources/Navbar/githubLogo.png";
 import linkedinLogo from "../Resources/Navbar/linkedinLogo.png";
