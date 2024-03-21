@@ -40,11 +40,11 @@ export default function Introcard() {
   return (
     
     //    card 
-       <div class="card introCard my-3">
-        <div class="row g-0">
-          <div class="col-md-8">
-            <div class="card-body mb-0 text-white">
-              <h5 class="card-title">
+       <div className="card introCard my-3">
+        <div className="row g-0">
+          <div className="col-md-8">
+            <div className="card-body mb-0 text-white">
+              <h5 className="card-title">
                 <TypeAnimation
                   sequence={greetData}
                   wrapper="span"
@@ -53,15 +53,15 @@ export default function Introcard() {
                   repeat={Infinity}
                 />
               </h5>
-              <p class="card-text">
+              <span className="card-text">
                 I'm
                 <p className="name">Rishabh Kanaujiya</p>
-              </p>
+              </span>
 
-              <p class="card-text">
+              <p className="card-text">
                 I'm <span style={{ color: "red" }}>20</span> years old
               </p>
-              <p class="roles">
+              <p className="roles">
                 <TypeAnimation
                   sequence={rolesData}
                   wrapper="span"
@@ -71,7 +71,7 @@ export default function Introcard() {
                 />
               </p>
 
-              <p class="description">
+              <p className="description">
                 
                 -I'm a programming enthusiast who seeks for code in every
                 existing thing. Welcome to the digital version of myself ,
@@ -81,8 +81,8 @@ export default function Introcard() {
               </p>
             </div>
           </div>
-          <div class="col-md-3">
-            <img src={introCardImg} class="img-fluid rounded-start" alt="..." />
+          <div className="col-md-3">
+            <img src={introCardImg} className="img-fluid rounded-start" alt="..." />
           </div>
         </div>
     </div>

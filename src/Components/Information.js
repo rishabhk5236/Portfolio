@@ -5,6 +5,7 @@ import submitDone from '../Resources/Homepage/Contacts/submitDone.gif';
 import sendingMailPng from '../Resources/Homepage/Contacts/sendingMailPng.gif';
 
 
+
 export default function Information() {
 
   // this is the host name for sending emails 
@@ -79,7 +80,7 @@ setSendingMail(true);
 
       <div className="row skillRow">
         {skillsData.map((element) => {
-          return <img className="col-md-1" src={element.image} alt=".." />;
+          return <img className="col-md-1" key={element.title} src={element.image} alt=".." />;
         })}
       </div>
       {/* Education */}
@@ -93,18 +94,18 @@ setSendingMail(true);
       <div className="educationContainer">
         {educationData.map((element) => {
           return (
-            <div class="card text-center">
-              <img src={element.image} class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title  m-0">{element.qualification}</h5>
-                <p class="card-text  m-0">{element.tenure}</p>
-                <p class="card-text  m-0">
+            <div key={element.qualification} className="card text-center">
+              <img src={element.image} className="card-img-top" alt="..." />
+              <div className="card-body">
+                <h5 className="card-title  m-0">{element.qualification}</h5>
+                <p className="card-text  m-0">{element.tenure}</p>
+                <p className="card-text  m-0">
                   <strong>{element.college}</strong>
                 </p>
-                <p class="card-text  m-0">
+                <p className="card-text  m-0">
                   Score : <strong>{element.marks}%</strong>
                 </p>
-                <p class="card-text  m-0">{element.description}</p>
+                <p className="card-text  m-0">{element.description}</p>
               </div>
             </div>
           );
@@ -122,26 +123,26 @@ setSendingMail(true);
       <div className="workContainer row">
         {workData.map((element, index) => {
           return (
-            <div class="card col-md-5 mb-3">
-              <div class="row g-0">
-                <div class="col-md-4">
+            <div key={element.position+index} className="card col-md-5 mb-3">
+              <div className="row g-0">
+                <div className="col-md-4">
                   <img
                     src={element.image}
-                    class="img-fluid rounded-start"
+                    className="img-fluid rounded-start"
                     alt="..."
                   />
                 </div>
-                <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title">
+                <div className="col-md-8">
+                  <div className="card-body">
+                    <h5 className="card-title">
                       {element.position} |{" "}
                       <small style={{ color: "red" }}>
                         {element.organization}
                       </small>
                     </h5>
-                    <p class="card-text">{element.description}</p>
-                    <p class="card-text">
-                      <small class="text-body-secondary">
+                    <p className="card-text">{element.description}</p>
+                    <p className="card-text">
+                      <small className="text-body-secondary">
                         {element.tenure}
                       </small>
                     </p>
@@ -166,24 +167,24 @@ setSendingMail(true);
 
         {projectsData.map((element, index) => {
           return (
-            <div class="card mb-2">
-              <div class="card-body">
-                <h5 class="card-title">{element.title}</h5>
-                <h6 class="card-subtitle mb-2 text-body-secondary">
+            <div key={element.title+index} className="card mb-2">
+              <div className="card-body">
+                <h5 className="card-title">{element.title}</h5>
+                <h6 className="card-subtitle mb-2 text-body-secondary">
                   -<i>{element.genre}</i>
                 </h6>
-                <h6 class="card-subtitle mb-2 ">
+                <h6 className="card-subtitle mb-2 ">
                   <strong>
                     <u>Technologies used</u>-
                   </strong>
                   {element.technologyUsed}
                 </h6>
-                <p class="card-text">{element.description}</p>
+                <p className="card-text">{element.description}</p>
                 <a
                   href={element.link}
                   target="_blank"
                   rel="noreferrer"
-                  class="card-link"
+                  className="card-link"
                 >
                   Link
                 </a>
@@ -191,7 +192,7 @@ setSendingMail(true);
                   href={element.screenShots}
                   target="_blank"
                   rel="noreferrer"
-                  class="card-link"
+                  className="card-link"
                 >
                   Screen Shots
                 </a>
@@ -210,18 +211,18 @@ setSendingMail(true);
       </p>
 
       <div className="contactContainer">
-        {!isSubmit && <div class="card mb-3">
-          <div class="card-body">
-            <h5 class="card-title text-center">Enter Details to Contact me</h5>
+        {!isSubmit && <div className="card mb-3">
+          <div className="card-body">
+            <h5 className="card-title text-center">Enter Details to Contact me</h5>
 
-              <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">
+              <div className="mb-3">
+                <label htmlFor="exampleFormControlInput1" className="form-label">
                   Email address
                 </label>
                 <input
                   style={{border:gotError && sendingData.email===""?"2px solid red":""}}
                   type="email"
-                  class="form-control"
+                  className="form-control"
                   id="exampleFormControlInput1"
                   placeholder="Please Enter your email"
                   name="email"
@@ -230,13 +231,13 @@ setSendingMail(true);
                 />
                 {(gotError && sendingData.email==="")&& <p className="card-text" style={{color:'red'}}>Please Enter Your email</p>}
               </div>
-              <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label">
+              <div className="mb-3">
+                <label htmlFor="exampleFormControlTextarea1" className="form-label">
                   Feedback/Suggestion
                 </label>
                 <textarea
                 style={{border:gotError && sendingData.feedback===""?"2px solid red":""}}
-                  class="form-control"
+                  className="form-control"
                   id="exampleFormControlTextarea1"
                   rows="3"
                   placeholder="Your feedback can improve my version so please don't forget to commit one"
@@ -257,6 +258,9 @@ setSendingMail(true);
           </div>
 
         </div>}
+            
+        
+
 
        { isSubmit && <div className="text-center">
         <img className="submitImage" src={submitDone} alt=".."/>
@@ -264,6 +268,8 @@ setSendingMail(true);
         <h4>I'll surely connect with you in few hours</h4>
         </div>}
       </div>
+
+      
     </div>
   );
 }

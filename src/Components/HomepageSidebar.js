@@ -9,6 +9,7 @@ import Work from "../Resources/Homepage/Sidebar/Work.png";
 import Contact from "../Resources/Homepage/Sidebar/Contact.png";
 import Project from "../Resources/Homepage/Sidebar/Project.png";
 import Resume from "../Resources/Homepage/Sidebar/ResumeLogo.png";
+import socialMedia from "../Resources/Navbar/socialMedia.png";
 
 
 export default function HomepageSidebar() {
@@ -90,7 +91,7 @@ export default function HomepageSidebar() {
         <div>
           {sideBarData.map((element) => {
             return (
-              <span>
+              <span key={element.title}>
                 <OverlayTrigger
                   placement="right"
                   delay={{ show: 250, hide: 400 }}
@@ -133,7 +134,7 @@ export default function HomepageSidebar() {
       <div className="bottomBar fixed-bottom">
         {bottomBarData.map((element) => {
           return (
-            <div className="text-center">
+            <div className="text-center" key={element.title}>
             <img
               src={element.image}
               alt="."
@@ -156,7 +157,20 @@ export default function HomepageSidebar() {
             </a>
             <p>Resume</p>
             </div>
+
+          <div className="text-center">
+            <img
+            src={socialMedia}
+            alt=".."
+            className="mobile-offcanvas"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasRight"
+            aria-controls="offcanvasRight"
+          />
+            <p>Social</p>
+            </div>
             
+
       </div>
     </>
   );
