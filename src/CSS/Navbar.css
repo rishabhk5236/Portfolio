@@ -1,0 +1,77 @@
+.navbar{
+    padding: 0%;
+    box-shadow: 0 0 0.5vw 0px black;
+    height: 10vh;
+    background-color: white;
+
+}
+
+.navbar-brand {
+    font-size: 2vw;
+    font-weight: 500;
+    font-family: "Fredoka", sans-serif;
+}
+
+.social-media img{
+    width: 2vw;
+    margin: 0 1vw 0 1vw;
+    position: relative;
+}
+
+
+
+.social-media img:hover{
+    cursor: pointer;
+    
+}
+
+
+
+@media screen and (max-width:700px) {
+    .navbar-brand {
+        font-size: 6vw;
+        font-weight: 500;
+        font-family: "Fredoka", sans-serif;
+        
+    }
+
+
+    .navbar{
+        height: 6vh;
+        padding: 0%;
+        width: 100%;
+        box-shadow: 0 0 0.5vw 0px black;
+        background-color: white;
+    
+    }
+
+    
+    
+    .social-media img{
+        display: none;
+    }
+
+    .offcanvas{
+        --bs-offcanvas-width:18vw;
+      }
+    .offcanvas-body .social-media img{
+        display: block;
+        width: 8vw;
+        margin-bottom: 3vh;
+    }
+    .offcanvas-body{
+        display: flex;
+        background-color: rgba(222, 221, 221, 0.594);
+    }
+    .offcanvas-body .social-media{
+        flex-direction: column;
+        align-items: center;
+       
+        
+
+    }
+    
+    
+   
+    
+}
