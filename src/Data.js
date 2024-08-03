@@ -14,6 +14,8 @@ import educationBtech from "../src/Resources/Homepage/Education/educationBtech.g
 import GoogleDevelopersLogo from "../src/Resources/Homepage/Work/googleDevelopersLogo.png";
 import IitKanpurLogo from "../src/Resources/Homepage/Work/IItKanpurLogo.png";
 import JioLogo from '../src/Resources/Homepage/Work/JioLogo.png';
+import VBALogo from '../src/Resources/Homepage/Skills/VBALogo.png';
+
 
 
 
@@ -54,6 +56,10 @@ export const skillsData = [{
         title: "MySQL",
         image: MYSQLLogo,
     },
+    {
+        title: "VBA",
+        image: VBALogo,
+    }
 ];
 
 
