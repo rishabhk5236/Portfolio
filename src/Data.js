@@ -18,7 +18,7 @@ import VBALogo from '../src/Resources/Homepage/Skills/VBALogo.png';
 import RobotFrameworkLogo from '../src/Resources/Homepage/Skills/robotFramework.png';
 
 
-
+// temp
 // this is skills data 
 export const skillsData = [{
         title: "C++",
