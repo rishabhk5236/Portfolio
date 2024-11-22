@@ -119,7 +119,7 @@ export default function HomepageSidebar() {
             overlay={renderTooltip("My Resume")}
           >
             <a
-              href="https://drive.google.com/file/d/1YkfOAOxHibGZor1TtqQX1hQG22z-Yc3M/view?usp=sharing"
+              href="https://drive.google.com/file/d/18XHPl1s40xWp_tkMbLhRGuznEWpBHn55/view?usp=drive_link"
               target="_blank"
               rel="noreferrer"
             >

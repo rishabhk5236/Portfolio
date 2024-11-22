@@ -15,7 +15,7 @@ import GoogleDevelopersLogo from "../src/Resources/Homepage/Work/googleDeveloper
 import IitKanpurLogo from "../src/Resources/Homepage/Work/IItKanpurLogo.png";
 import JioLogo from '../src/Resources/Homepage/Work/JioLogo.png';
 import VBALogo from '../src/Resources/Homepage/Skills/VBALogo.png';
-
+import RobotFrameworkLogo from '../src/Resources/Homepage/Skills/robotFramework.png';
 
 
 
@@ -59,6 +59,10 @@ export const skillsData = [{
     {
         title: "VBA",
         image: VBALogo,
+    },
+    {
+        title: "Robot Framework",
+        image: RobotFrameworkLogo,
     }
 ];
 
