@@ -16,11 +16,17 @@ import IitKanpurLogo from "../src/Resources/Homepage/Work/IItKanpurLogo.png";
 import JioLogo from '../src/Resources/Homepage/Work/JioLogo.png';
 import VBALogo from '../src/Resources/Homepage/Skills/VBALogo.png';
 import RobotFrameworkLogo from '../src/Resources/Homepage/Skills/robotFramework.png';
+import ReactNativeLogo from '../src/Resources/Homepage/Skills/ReactNativeImage.png'
 
 
 // temp
 // this is skills data 
-export const skillsData = [{
+export const skillsData = [
+    {
+        title: "React Native",
+        image: ReactNativeLogo,
+    },
+    {
         title: "C++",
         image: CppLogo,
     },
