@@ -119,7 +119,7 @@ export default function HomepageSidebar() {
             overlay={renderTooltip("My Resume")}
           >
             <a
-              href="https://drive.google.com/file/d/1ydXCikYisvqf-62dRqVR9CvEPS85QImb/view?usp=sharing"
+              href={process.env.REACT_APP_RESUME_LINK}
               target="_blank"
               rel="noreferrer"
             >
